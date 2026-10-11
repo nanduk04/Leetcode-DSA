@@ -1,0 +1,10 @@
+#using normal operators(can be implemented using bitwise operators:return result=(result<<1)|(n&1))
+
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        result=0
+        for i in range(32):
+            bit=n%2
+            result=result*2+bit
+            n=n//2
+        return result
