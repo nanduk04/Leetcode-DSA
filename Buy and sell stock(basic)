@@ -1,4 +1,6 @@
 #check each element if it is lowest,update lowest,check profit if current<lowest calculate(current-lowest),update max_profit with the max value
+#one pass method
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         lowest=prices[0]
