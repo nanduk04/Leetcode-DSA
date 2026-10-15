@@ -1,0 +1,11 @@
+#Implemented checking if the indexes repeat in the hash set,can also be implemented checking the numbers itself
+
+class Solution:
+    def containsDuplicate(self, nums: list[int]) -> bool:
+        seen=set()
+        for i in nums:
+            if i in seen:
+                return True
+            else:
+                seen.add(i)
+        return False
