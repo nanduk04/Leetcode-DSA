@@ -2,7 +2,6 @@
 
 class Solution:
     def missingNumber(self, nums: list[int]) -> int:
-        nums.sort()
         correct=list(range(len(nums)+1))
         result=list(set(correct)-set(nums))
         return result[0]
