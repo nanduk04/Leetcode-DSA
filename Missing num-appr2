@@ -1,0 +1,8 @@
+#calculate sum of n numbers using n*(n+1)/2 and then subtract
+
+class Solution:
+    def missingNumber(self, nums: list[int]) -> int:
+        n=len(nums)
+        correct=int((n*(n+1))/2)
+        return correct-sum(nums)
+            
